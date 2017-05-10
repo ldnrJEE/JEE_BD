@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 mai 2017, 14:17:33
+    Author     : stag
+*/
+
+/*Skin du titre*/
+.titre{
+    font-size: 4em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/*Skin des boutons*/
+.btn{
+    background: #c9e2f2;
+    background-color: lightgrey;
+    border-radius: 15px;
+    font-family: Arial;
+    color: black;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    margin: 50px;
+}
+
+.groupBtn{
+    text-align: center;
+}
+
+/*Image de couverture*/
+#couv{
+    width: 1550px;
+    height: 200px;
+}
+
+/*Fusion des bordures*/
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+/*Une ligne sur deux sera de couleur grise*/
+tr:nth-child(2n){
+    background-color: lightgrey;
+}
+
+/*Skin des titres du header*/
+thead th{
+    text-align: center;
+    border-bottom: 1px black solid;
+}
+
+/*Skin des titres du footer*/
+tfoot th{
+    text-align: center;
+    border-top: 1px black solid;
+}
+
+/*Couleur au survol de la souris*/
+tbody tr:hover{
+    background-color: greenyellow;
+}
+
+/*Skin des lignes*/
+tr{
+    height: 2.2em;                
+}
+
+/*Skin des colonnes*/
+td{
+    width: 150px;
+    text-align: center;
+}

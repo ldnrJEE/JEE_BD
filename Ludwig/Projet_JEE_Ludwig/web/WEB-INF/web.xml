@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>controllerLivresExistants</servlet-name>
+        <servlet-class>servlet.controllerLivresExistants</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>controllerLivresPossedes</servlet-name>
+        <servlet-class>servlet.controllerLivresPossedes</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>controllerLivresExistants</servlet-name>
+        <url-pattern>/controllerLivresExistants</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controllerLivresPossedes</servlet-name>
+        <url-pattern>/controllerLivresPossedes</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
