@@ -11,7 +11,7 @@ package bean;
  */
 public class LivresPossedes {
     private String dateDepot;
-    private String EditionOriginale;
+    private String editionOriginale;
     private String dateAchat;
     private String prixAchat;
     private String etat;
@@ -26,11 +26,11 @@ public class LivresPossedes {
     }
 
     public String getEditionOriginale() {
-        return EditionOriginale;
+        return editionOriginale;
     }
 
     public void setEditionOriginale(String EditionOriginale) {
-        this.EditionOriginale = EditionOriginale;
+        this.editionOriginale = EditionOriginale;
     }
 
     public String getDateAchat() {
