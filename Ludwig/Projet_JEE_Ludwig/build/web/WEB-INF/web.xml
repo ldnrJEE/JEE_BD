@@ -8,6 +8,22 @@
         <servlet-name>controllerLivresPossedes</servlet-name>
         <servlet-class>servlet.controllerLivresPossedes</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>controllerAjouterLivreExistant</servlet-name>
+        <servlet-class>servlet.controllerAjouterLivreExistant</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>controllerModifierLivreExistant</servlet-name>
+        <servlet-class>servlet.controllerModifierLivreExistant</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>controllerAjouterLivrePossede</servlet-name>
+        <servlet-class>servlet.controllerAjouterLivrePossede</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>controllerModifierLivrePossede</servlet-name>
+        <servlet-class>servlet.controllerModifierLivrePossede</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>controllerLivresExistants</servlet-name>
         <url-pattern>/controllerLivresExistants</url-pattern>
@@ -15,6 +31,22 @@
     <servlet-mapping>
         <servlet-name>controllerLivresPossedes</servlet-name>
         <url-pattern>/controllerLivresPossedes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controllerAjouterLivreExistant</servlet-name>
+        <url-pattern>/controllerAjouterLivreExistant</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controllerModifierLivreExistant</servlet-name>
+        <url-pattern>/controllerModifierLivreExistant</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controllerAjouterLivrePossede</servlet-name>
+        <url-pattern>/controllerAjouterLivrePossede</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controllerModifierLivrePossede</servlet-name>
+        <url-pattern>/controllerModifierLivrePossede</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

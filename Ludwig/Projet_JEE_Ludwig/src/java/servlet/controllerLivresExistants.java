@@ -5,6 +5,7 @@
  */
 package servlet;
 
+import bean.LivresExistants;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -30,7 +31,30 @@ public class controllerLivresExistants extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-            request.getServletContext().getRequestDispatcher("/WEB-INF/LivresExistants.jsp").forward(request, response);
+
+        //********** RECUPERATION DES DONNEES **********    
+        String serie = request.getParameter("serie");
+        String titre = request.getParameter("titre");
+        String editeur = request.getParameter("editeur");
+        String auteur = request.getParameter("auteur");
+        String langue = request.getParameter("langue");
+        String isbn = request.getParameter("isbn");
+        String nombreExemplaire = request.getParameter("nombreExemplaire");
+
+        //********** INSTANCIATION DU BEAN **********
+        LivresExistants lExist = new LivresExistants();
+
+        //********** ENREGISTREMENT DES DONNEES DANS LE BEAN **********
+        lExist.setSerie(serie);
+        lExist.setTitre(titre);
+        lExist.setEditeur(editeur);
+        lExist.setAuteur(auteur);
+        lExist.setLangue(langue);
+        lExist.setIsbn(isbn);
+        lExist.setNombreExemplaire(nombreExemplaire);
+
+        request.setAttribute("livresExistants", lExist);
+        request.getServletContext().getRequestDispatcher("/WEB-INF/LivresExistants.jsp").forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

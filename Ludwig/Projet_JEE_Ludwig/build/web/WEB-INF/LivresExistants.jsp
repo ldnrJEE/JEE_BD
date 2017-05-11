@@ -23,6 +23,7 @@
         <br><br><br><br>
 
         <!--Table sortant la BDD-->
+        <!--Besoin de la toute la BDD existant-->
         <table>
             <!--Titre-->
             <thead>
@@ -40,7 +41,7 @@
             <!--Corps-->
             <tbody>
                 <tr>
-                    <td>X</td>
+                    <td><input type="radio" name="id" value=""></td>
                     <td>123456789</td>
                     <td>Tintin</td>
                     <td>Tintin sur la lune</td>
@@ -52,7 +53,7 @@
                 </tr>
 
                 <tr>
-                    <td>X</td>
+                    <td><input type="radio" name="id" value=""></td>
                     <td>123456789</td>
                     <td>Tintin</td>
                     <td>Tintin sur la lune</td>
@@ -63,7 +64,7 @@
                 </tr>
 
                 <tr>
-                    <td>X</td>
+                    <td><input type="radio" name="id" value=""></td>
                     <td>123456789</td>
                     <td>Tintin</td>
                     <td>Tintin sur la lune</td>
@@ -74,7 +75,7 @@
                 </tr>
 
                 <tr>
-                    <td>X</td>
+                    <td><input type="radio" name="id" value=""></td>
                     <td>123456789</td>
                     <td>Tintin</td>
                     <td>Tintin sur la lune</td>
@@ -104,13 +105,13 @@
 
         <div class='groupBtn'>
             <!--Bouton Ajouter-->
-            <input class="btn" type="button" value="Ajouter" onclick="document.location.href = 'index.html'">
+            <input class="btn" type="button" value="Ajouter" onclick="document.location.href = 'controllerAjouterLivreExistant'">
 
             <!--Bouton Modifier-->
-            <input class="btn" type="button" value="Modifier" onclick="document.location.href = 'index.html'">
+            <input class="btn" type="button" value="Modifier" onclick="document.location.href = 'controllerModifierLivreExistant'">
 
             <!--Bouton Supprimer-->
-            <input class="btn" type="button" value="Supprimer" onclick="document.location.href = 'index.html'">
+            <input class="btn" type="button" value="Supprimer" onclick="">
         </div>
     </body>
 </html>

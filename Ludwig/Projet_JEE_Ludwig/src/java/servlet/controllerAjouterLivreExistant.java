@@ -5,7 +5,6 @@
  */
 package servlet;
 
-import bean.LivresPossedes;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -17,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author stag
  */
-public class controllerLivresPossedes extends HttpServlet {
+public class controllerAjouterLivreExistant extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -30,43 +29,8 @@ public class controllerLivresPossedes extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");   
-    
-         //********** RECUPERATION DES DONNEES **********    
-        String dateDepot = request.getParameter("dateDepot");
-        String editionOriginale = request.getParameter("EditionOriginale");
-        String dateAchat = request.getParameter("dateAchat");
-        String prixAchat = request.getParameter("prixAchat");
-        String etat = request.getParameter("etat");
-        String notesComp = request.getParameter("notesComp");
-        
-
-        //********** INSTANCIATION DU BEAN **********
-        LivresPossedes lPoss = new LivresPossedes();
-
-        //********** ENREGISTREMENT DES DONNEES DANS LE BEAN **********
-        lPoss.setDateDepot(dateDepot);
-        lPoss.setEditionOriginale(editionOriginale);
-        lPoss.setDateAchat(dateAchat);
-        lPoss.setPrixAchat(prixAchat);
-        lPoss.setEtat(etat);
-        lPoss.setNotesComp(notesComp);
-        
-        request.setAttribute("livresPossedes", lPoss);
-        request.getServletContext().getRequestDispatcher("/WEB-INF/LivresPossedes.jsp").forward(request, response);
-    }
-
-    
-    protected void ajouterLivre(){
-        
-    }
-    
-    protected void modifierLivre(){
-        
-    }
-    
-    protected void supprimerLivre(){
-        
+        response.setContentType("text/html;charset=UTF-8");
+        request.getServletContext().getRequestDispatcher("/WEB-INF/AjouterLivreExistant.jsp").forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
