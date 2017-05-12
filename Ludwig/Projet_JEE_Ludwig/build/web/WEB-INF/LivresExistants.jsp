@@ -4,6 +4,10 @@
     Author     : stag
 --%>
 
+<!--JSP LivresExistants
+Affiche une liste de tous les albums existants dans la BDD générale
+Permet à l'utilisateur d'accéder aux fonctions Ajouter, Modifier et Supprimer-->
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -116,8 +120,8 @@
             <!--Bouton Modifier-->
             <input class="btn" type="button" value="Modifier" onclick="document.location.href = 'controllerModifierLivreExistant'">
 
-            <!--Bouton Supprimer-->
-            <input class="btn" type="button" value="Supprimer" onclick="">
+            <!--Bouton Supprimer, juste cosmétique pour le moment-->
+            <input class="btn" type="button" value="Supprimer" onclick="alert('Êtes vous sûr de vouloir supprimer cet album?')">
         </div>
     </body>
 </html>

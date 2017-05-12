@@ -4,6 +4,10 @@
     Author     : stag
 --%>
 
+<!--JSP LivresPossedes
+Affiche une liste de tous les livres possédés par le collectionneur et présent dans sa BDD personnelle
+Permet à l'utilisateur d'accéder aux fonctions Ajouter, Modifier et Supprimer-->
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -120,8 +124,8 @@
             <!--Bouton Modifier-->
             <input class="btn" type="button" value="Modifier" onclick="document.location.href = 'controllerModifierLivrePossede'">
 
-            <!--Bouton Supprimer-->
-            <input class="btn" type="button" value="Supprimer" onclick="">
+            <!--Bouton Supprimer, juste cosmétique pour le moment-->
+            <input class="btn" type="button" value="Supprimer" onclick="alert('Êtes vous sûr de vouloir supprimer cet exemplaire?')">
         </div>
     </body>
 </html>

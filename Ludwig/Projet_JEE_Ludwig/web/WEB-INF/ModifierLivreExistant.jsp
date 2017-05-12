@@ -4,6 +4,10 @@
     Author     : stag
 --%>
 
+<!--JSP ModifierLivreExistant
+Envois un formulaire à l'utilisateur pour qu'il puisse modifier les attributs
+d'un album existant-->
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -22,6 +26,7 @@
 
         <br><br><br><br>
 
+        <!--***** FORMULAIRE *****-->
         <form method="POST" action="ControllerModificationAlbum">
             <div class = "recap">
                 <p>Série : 

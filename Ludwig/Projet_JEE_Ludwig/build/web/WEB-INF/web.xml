@@ -52,6 +52,10 @@
         <servlet-name>controllerCreationExemplaire</servlet-name>
         <servlet-class>servlet.controllerCreationExemplaire</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>controllerModificationExemplaire</servlet-name>
+        <servlet-class>servlet.controllerModificationExemplaire</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>controllerLivresExistants</servlet-name>
         <url-pattern>/controllerLivresExistants</url-pattern>
@@ -103,6 +107,10 @@
     <servlet-mapping>
         <servlet-name>controllerCreationExemplaire</servlet-name>
         <url-pattern>/controllerCreationExemplaire</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controllerModificationExemplaire</servlet-name>
+        <url-pattern>/controllerModificationExemplaire</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

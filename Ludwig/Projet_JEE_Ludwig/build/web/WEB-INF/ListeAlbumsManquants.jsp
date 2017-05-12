@@ -4,6 +4,9 @@
     Author     : stag
 --%>
 
+<!--JSP ListeAlbumsManquants
+Affiche une liste de tous les albums d'une série spécifiée qu'il manque au collectionneur-->
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -23,17 +26,8 @@
 
         <br><br><br><br>
 
-        <%--  private Integer id_album;
-    private String  titre_album;
-    private String  nom_serie;
-    private String  nom_editeur;
-    private String  nom_illustrateur;
-    private String  nom_scenariste;
-    private String  langue;
-    private String  ISBN;
-    private Integer nombre_exemplaire;--%>
-
-
+        <!--Table, besoin lien BDD-->
+        <!--Besoin de toute la série titre et isbn d'Album-->
         <table>
             <thead>
                 <tr>

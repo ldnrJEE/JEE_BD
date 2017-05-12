@@ -4,6 +4,9 @@
     Author     : stag
 --%>
 
+<!--JSP AjouterLivrePossede
+Donne un formulaire permettant à l'utilisateur d'ajouter un exemplaire à sa BDD personnelle-->
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -22,42 +25,43 @@
 
         <br><br><br><br>
 
+        <!--***** FORMULAIRE *****-->
         <form method="POST" action="controllerCreationExemplaire">
             <div class = "recap">
                 <label class = recapP>Date de dépôt : </label>
-                <input class = "textInput" type="text" name="dateDepot" value="">
+                <input class = "textInput" type="text" name="date_depot" value="">
                 <br><br>
 
                 <label class = recapP>Prix d'achat : </label>
-                <input class = "textInput" type="text" name="prixAchat" value="">
+                <input class = "textInput" type="text" name="prix_achat" value="">
                 <br><br>
 
                 <label class = recapP>État de conservation : </label> 
-                <select class = "textInput" name="etat">
-                    <option>Mauvais</option>
-                    <option>Moyen</option>
-                    <option>Bon</option>
+                <select class = "textInput" name="etat_conservation">
+                    <option value="1">Mauvais</option>
+                    <option value="2">Moyen</option>
+                    <option value="3">Bon</option>
                 </select>
                 <br><br>
 
                 <label class = recapP>Notes : </label>
-                <input class = "textInput" type="text" name="notes" value="">
+                <input class = "textInput" type="text" name="note_texte" value="">
                 <br><br>
 
                 <label class = recapP>ID : </label>
-                <input class = "textInput" type="text" name="id" value="">
+                <input class = "textInput" type="text" name="id_exemplaire" value="">
                 <br><br>
 
                 <label class = recapP>Date d'achat : </label>
-                <input class = "textInput" type="date" name="dateAchat" value="<?php echo $today?>">
+                <input class = "textInput" type="date" name="date_achat" value="">
                 <br><br>
-
+                
                 <label class = recapP>Edition originale : </label>
                 <label>Oui
-                    <input type="radio" name="radio1" value="oui">
+                    <input type="radio" name="edition_originale" value="true">
                 </label>
                 <label>Non
-                    <input type="radio" name="radio1" value="non">
+                    <input type="radio" name="edition_originale" value="false">
                 </label>
                 <br><br>    
             </div>
