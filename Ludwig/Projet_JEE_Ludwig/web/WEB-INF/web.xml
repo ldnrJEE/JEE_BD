@@ -24,6 +24,22 @@
         <servlet-name>controllerModifierLivrePossede</servlet-name>
         <servlet-class>servlet.controllerModifierLivrePossede</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>controllerAlbumManquant</servlet-name>
+        <servlet-class>servlet.controllerAlbumManquant</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>controllerListeAlbumsManquants</servlet-name>
+        <servlet-class>servlet.controllerListeAlbumsManquants</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>controllerAlbumPossede</servlet-name>
+        <servlet-class>servlet.controllerAlbumPossede</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>controllerListeAlbumsPossedes</servlet-name>
+        <servlet-class>servlet.controllerListeAlbumsPossedes</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>controllerLivresExistants</servlet-name>
         <url-pattern>/controllerLivresExistants</url-pattern>
@@ -47,6 +63,22 @@
     <servlet-mapping>
         <servlet-name>controllerModifierLivrePossede</servlet-name>
         <url-pattern>/controllerModifierLivrePossede</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controllerAlbumManquant</servlet-name>
+        <url-pattern>/controllerAlbumManquant</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controllerListeAlbumsManquants</servlet-name>
+        <url-pattern>/controllerListeAlbumsManquants</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controllerAlbumPossede</servlet-name>
+        <url-pattern>/controllerAlbumPossede</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controllerListeAlbumsPossedes</servlet-name>
+        <url-pattern>/controllerListeAlbumsPossedes</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

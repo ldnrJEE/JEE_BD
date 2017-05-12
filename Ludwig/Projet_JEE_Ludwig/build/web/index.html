@@ -15,13 +15,15 @@ and open the template in the editor.
 
     <body>
     <center><img src="biblio.jpg" id="couv"></center>
-    <br><br><br><br>
+    <br>
+    <h1><span> Ma bdtheque </span></h1>
+    <br>
 
     <div class='groupBtn'>
         <input class="btn" type="button" value="Livres existants" onclick="document.location.href = 'controllerLivresExistants'">
         <input class="btn" type="button" value="Livres possédés" onclick="document.location.href = 'controllerLivresPossedes'">
-        <input class="btn" type="button" value="Livres manquants dans une série" onclick="document.location.href = 'controllerLivresExistants'">
-        <input class="btn" type="button" value="Livres possédés dans une série" onclick="document.location.href = 'controllerLivresExistants'">
+        <input class="btn" type="button" value="Livres manquants dans une série" onclick="document.location.href = 'controllerAlbumManquant'">
+        <input class="btn" type="button" value="Livres possédés dans une série" onclick="document.location.href = 'controllerAlbumPossede'">
     </div>
 </body>
 </html>

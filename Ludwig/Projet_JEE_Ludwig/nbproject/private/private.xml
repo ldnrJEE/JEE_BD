@@ -3,16 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/stag/Cours/JAVA/JEE/Projet_JEE_Ludwig/src/java/bean/LivresPossedes.java</file>
-            <file>file:/home/stag/Cours/JAVA/JEE/Projet_JEE_Ludwig/web/WEB-INF/web.xml</file>
-            <file>file:/home/stag/Cours/JAVA/JEE/Projet_JEE_Ludwig/src/java/servlet/controllerLivresExistants.java</file>
-            <file>file:/home/stag/Cours/JAVA/JEE/Projet_JEE_Ludwig/web/biblio.png</file>
-            <file>file:/home/stag/Cours/JAVA/JEE/Projet_JEE_Ludwig/web/WEB-INF/LivresPossedes.jsp</file>
-            <file>file:/home/stag/Cours/JAVA/JEE/Projet_JEE_Ludwig/src/java/servlet/controllerLivresPossedes.java</file>
+            <file>file:/home/stag/Cours/JAVA/JEE/Projet_JEE_Ludwig/src/java/servlet/controllerAlbumManquant.java</file>
+            <file>file:/home/stag/Cours/JAVA/JEE/Projet_JEE_Ludwig/src/java/servlet/controllerListeAlbumsManquants.java</file>
+            <file>file:/home/stag/Cours/JAVA/JEE/Projet_JEE_Ludwig/web/WEB-INF/ListeALbumsManquants.jsp</file>
+            <file>file:/home/stag/Cours/JAVA/JEE/Projet_JEE_Ludwig/src/java/servlet/controllerAlbumPossede.java</file>
             <file>file:/home/stag/Cours/JAVA/JEE/Projet_JEE_Ludwig/web/index.html</file>
-            <file>file:/home/stag/Cours/JAVA/JEE/Projet_JEE_Ludwig/src/java/bean/LivresExistants.java</file>
-            <file>file:/home/stag/Cours/JAVA/JEE/Projet_JEE_Ludwig/web/css/newcss.css</file>
-            <file>file:/home/stag/Cours/JAVA/JEE/Projet_JEE_Ludwig/web/WEB-INF/LivresExistants.jsp</file>
+            <file>file:/home/stag/Cours/JAVA/JEE/Projet_JEE_Ludwig/web/WEB-INF/AlbumManquant.jsp</file>
+            <file>file:/home/stag/Cours/JAVA/JEE/Projet_JEE_Ludwig/web/WEB-INF/AlbumPossede.jsp</file>
         </group>
     </open-files>
 </project-private>

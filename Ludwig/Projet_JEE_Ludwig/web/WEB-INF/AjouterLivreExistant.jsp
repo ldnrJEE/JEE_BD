@@ -23,27 +23,27 @@
         <br><br><br><br>
         
         <div class = "recap">
-            <p>Série : 
-            <input type="text" name="serie" value="">
-            </p>
-            <p>Titre : 
-            <input type="text" name="titre" value="">
-            </p>
-            <p>Éditeur : 
-            <input type="text" name="editeur" value="">
-            </p>
-            <p>Auteur : 
-            <input type="text" name="auteur" value="">
-            </p>
-            <p>Langue : 
-            <input type="text" name="langue" value="">
-            </p>
-            <p>ISBN : 
-            <input type="text" name="isbn" value="">
-            </p>
+            <label class = recapP>Série : </label>
+            <input class = "textInput" type="text" name="serie" value="">
+            <br><br>
+            <label class = recapP>Titre : </label>
+            <input class = "textInput"  type="text" name="titre" value="">
+            <br><br>
+            <label class = recapP>Éditeur : </label>
+            <input class = "textInput" type="text" name="editeur" value="">
+            <br><br>
+            <label class = recapP>Auteur : </label>
+            <input class = "textInput" type="text" name="auteur" value="">
+            <br><br>
+            <label class = recapP>Langue : </label>
+            <input class = "textInput" type="text" name="langue" value="">
+            <br><br>
+            <label class = recapP>ISBN : </label>
+            <input class = "textInput" type="text" name="isbn" value="">
+            <br><br>
         </div>
         
-        Bouton bas
+        <!--Bouton bas-->
         <div class='groupBtn'>
             <!--Bouton Annuler-->
             <input class="btn" type="button" value="Annuler" onclick="document.location.href = 'controllerLivresExistants'">
