@@ -45,52 +45,52 @@
                 <tr>
                     <td><input type="radio" name="id" value=""></td>
                     <td>Titre</td>
-                    <td>123456789</td>
-                    <td>21/12/2012</td>
-                    <td>Non</td>
-                    <td>20/12/2012</td>
-                    <td>100</td>
-                    <td>Moyen</td>
-                    <td>Je suis une note complémentaire</td>
-                    <td>1</td>
+                    <td>${exemplaire.id_exemplaire}</td>
+                    <td>${exemplaire.date_depot}</td>
+                    <td>${exemplaire.edition_originale}</td>
+                    <td>${exemplaire.date_achat}</td>
+                    <td>${exemplaire.prix_achat}</td>
+                    <td>${exemplaire.etat_conservation}</td>
+                    <td>${exemplaire.note_texte}</td>
+                    <td>3</td>
                 </tr>
 
                 <tr>
                     <td><input type="radio" name="id" value=""></td>
                     <td>Titre</td>
-                    <td>123456789</td>
-                    <td>21/12/2012</td>
-                    <td>Non</td>
-                    <td>20/12/2012</td>
-                    <td>100</td>
-                    <td>Moyen</td>
-                    <td>Je suis une note complémentaire</td>
-                    <td>2</td>
+                    <td>${exemplaire.id_exemplaire}</td>
+                    <td>${exemplaire.date_depot}</td>
+                    <td>${exemplaire.edition_originale}</td>
+                    <td>${exemplaire.date_achat}</td>
+                    <td>${exemplaire.prix_achat}</td>
+                    <td>${exemplaire.etat_conservation}</td>
+                    <td>${exemplaire.note_texte}</td>
+                    <td>3</td>
                 </tr>
 
                 <tr>
                     <td><input type="radio" name="id" value=""></td>
                     <td>Titre</td>
-                    <td>123456789</td>
-                    <td>21/12/2012</td>
-                    <td>Non</td>
-                    <td>20/12/2012</td>
-                    <td>100</td>
-                    <td>Moyen</td>
-                    <td>Je suis une note complémentaire</td>
-                    <td>1</td>
+                    <td>${exemplaire.id_exemplaire}</td>
+                    <td>${exemplaire.date_depot}</td>
+                    <td>${exemplaire.edition_originale}</td>
+                    <td>${exemplaire.date_achat}</td>
+                    <td>${exemplaire.prix_achat}</td>
+                    <td>${exemplaire.etat_conservation}</td>
+                    <td>${exemplaire.note_texte}</td>
+                    <td>3</td>
                 </tr>
 
                 <tr>
                     <td><input type="radio" name="id" value=""></td>
                     <td>Titre</td>
-                    <td>123456789</td>
-                    <td>21/12/2012</td>
-                    <td>Non</td>
-                    <td>20/12/2012</td>
-                    <td>100</td>
-                    <td>Moyen</td>
-                    <td>Je suis une note complémentaire</td>
+                    <td>${exemplaire.id_exemplaire}</td>
+                    <td>${exemplaire.date_depot}</td>
+                    <td>${exemplaire.edition_originale}</td>
+                    <td>${exemplaire.date_achat}</td>
+                    <td>${exemplaire.prix_achat}</td>
+                    <td>${exemplaire.etat_conservation}</td>
+                    <td>${exemplaire.note_texte}</td>
                     <td>3</td>
                 </tr>
             </tbody>

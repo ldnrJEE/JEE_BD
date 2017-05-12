@@ -21,34 +21,39 @@
         <div class="titre">Modifier un livre existant</div>
 
         <br><br><br><br>
-        
-        <div class = "recap">
-            <p>Série : 
-            <input type="text" name="serie" value="">
-            </p>
-            <p>Titre : 
-            <input type="text" name="titre" value="">
-            </p>
-            <p>Éditeur : 
-            <input type="text" name="editeur" value="">
-            </p>
-            <p>Auteur : 
-            <input type="text" name="auteur" value="">
-            </p>
-            <p>Langue : 
-            <input type="text" name="langue" value="">
-            </p>
-            <p>ISBN : 
-            <input type="text" name="isbn" value="">
-            </p>
-        </div>
-        
-        <div class='groupBtn'>
-            <!--Bouton Annuler-->
-            <input class="btn" type="button" value="Annuler" onclick="document.location.href = 'controllerLivresExistants'">
 
-            <!--Bouton Envoyer-->
-            <input class="btn" type="button" value="Envoyer" onclick="document.location.href = 'index.html'">
-        </div>
+        <form method="POST" action="ControllerModificationAlbum">
+            <div class = "recap">
+                <p>Série : 
+                    <input type="text" name="nom_serie" value="">
+                </p>
+                <p>Titre : 
+                    <input type="text" name="titre_album" value="">
+                </p>
+                <p>Éditeur : 
+                    <input type="text" name="nom_editeur" value="">
+                </p>
+                <p>Illustrateur : 
+                    <input type="text" name="nom_illustrateur" value="">
+                </p>
+                <p>Scénariste : 
+                    <input type="text" name="nom_scenariste" value="">
+                </p>
+                <p>Langue : 
+                    <input type="text" name="langue" value="">
+                </p>
+                <p>ISBN : 
+                    <input type="text" name="ISBN" value="">
+                </p>
+            </div>
+
+            <div class='groupBtn'>
+                <!--Bouton Annuler-->
+                <input class="btn" type="button" value="Annuler" onclick="document.location.href = 'controllerLivresExistants'">
+
+                <!--Bouton Envoyer-->
+                <input type="submit" name="BoutonModifAlbum" value="Envoyer" class="btn">
+            </div>
+        </form>
     </body>
 </html>

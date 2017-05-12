@@ -16,7 +16,7 @@ public class Exemplaire implements Serializable{
     private Integer id_exemplaire;
     private Integer date_depot;
     private Boolean edition_originale;
-    private Date date_achat;
+    private String date_achat;
     private Float prix_achat;
     private Integer etat_conservation;
     private String note_texte;
@@ -25,7 +25,7 @@ public class Exemplaire implements Serializable{
     public Exemplaire(){}
     
     public Exemplaire(Integer id_exemplaire, Integer date_depot, Boolean edition_originale,
-            Date date_achat, Float prix_achat, 
+            String date_achat, Float prix_achat, 
             Integer etat_conservation, String note_texte, Integer id_album){
         this.id_exemplaire = id_exemplaire;
         this.date_depot = date_depot;
@@ -61,11 +61,11 @@ public class Exemplaire implements Serializable{
         this.edition_originale = edition_originale;
     }
 
-    public Date getDate_achat() {
+    public String getDate_achat() {
         return date_achat;
     }
 
-    public void setDate_achat(Date date_achat) {
+    public void setDate_achat(String date_achat) {
         this.date_achat = date_achat;
     }
 

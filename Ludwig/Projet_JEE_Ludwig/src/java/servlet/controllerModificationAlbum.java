@@ -6,21 +6,18 @@
 package servlet;
 
 import beans.Album;
-import beans.Exemplaire;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Date;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import traitement.Donnees_Traite;
 
 /**
  *
  * @author stag
  */
-public class controllerListeAlbumsManquants extends HttpServlet {
+public class controllerModificationAlbum extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -33,12 +30,37 @@ public class controllerListeAlbumsManquants extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        Album album = new Album(2, "ayoub", "ludwig", "mityam", "matrix", "mokhtar", "français", "12532", 1252);
+        response.setContentType("text/html;charset=UTF-8");
+        
+        //********** RECUPERATION DES DONNEES **********
+//        Integer id_album = request.getParameter("id_album");
+        String titre_album = request.getParameter("titre_album");
+        String nom_serie = request.getParameter("nom_serie");
+        String nom_editeur = request.getParameter("nom_editeur");
+        String nom_illustrateur = request.getParameter("nom_illustrateur");
+        String nom_scenariste = request.getParameter("nom_scenariste");
+        String langue = request.getParameter("langue");
+        String ISBN = request.getParameter("ISBN");
+//        Integer nombre_exemplaire = request.getParameter("nombre_exemplaire");
+
+        //********** INSTANCIATION DU BEAN **********
+        Album album = new Album();
+
+        //********** ENREGISTREMENT DES DONNEES DANS LE BEAN **********
+//        album.setId_album(id_album);
+        album.setTitre_album(titre_album);
+        album.setNom_serie(nom_serie);
+        album.setNom_editeur(nom_editeur);
+        album.setNom_illustrateur(nom_illustrateur);
+        album.setNom_scenariste(nom_scenariste);
+        album.setLangue(langue);
+        album.setISBN(ISBN);
+//        album.setNombre_exemplaire(nombre_exemplaire);
+
         request.setAttribute("album", album);
-
-        Donnees_Traite.afficher(album);
-
-        this.getServletContext().getRequestDispatcher("/WEB-INF/ListeAlbumsManquants.jsp").forward(request, response);
+        
+//        Donnees_Traite.afficher(album);
+        request.getServletContext().getRequestDispatcher("/WEB-INF/LivresExistants.jsp").forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

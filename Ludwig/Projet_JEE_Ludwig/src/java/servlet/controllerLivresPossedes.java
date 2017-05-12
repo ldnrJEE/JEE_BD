@@ -5,13 +5,14 @@
  */
 package servlet;
 
-import bean.LivresPossedes;
+import beans.Exemplaire;
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.sql.Date;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import traitement.Traitement_Exemplaire;
 
 /**
  *
@@ -32,42 +33,14 @@ public class controllerLivresPossedes extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");   
     
-         //********** RECUPERATION DES DONNEES **********    
-        String dateDepot = request.getParameter("dateDepot");
-        String editionOriginale = request.getParameter("EditionOriginale");
-        String dateAchat = request.getParameter("dateAchat");
-        String prixAchat = request.getParameter("prixAchat");
-        String etat = request.getParameter("etat");
-        String notesComp = request.getParameter("notesComp");
+        Exemplaire exemplaire = new Exemplaire(2, 1999, true, "01/02/2010", 25.25f, 1, "Livre trés rare", 1);
+        request.setAttribute("exemplaire", exemplaire);
         
-
-        //********** INSTANCIATION DU BEAN **********
-        LivresPossedes lPoss = new LivresPossedes();
-
-        //********** ENREGISTREMENT DES DONNEES DANS LE BEAN **********
-        lPoss.setDateDepot(dateDepot);
-        lPoss.setEditionOriginale(editionOriginale);
-        lPoss.setDateAchat(dateAchat);
-        lPoss.setPrixAchat(prixAchat);
-        lPoss.setEtat(etat);
-        lPoss.setNotesComp(notesComp);
+//        Traitement_Exemplaire.affEx(exemplaire);
         
-        request.setAttribute("livresPossedes", lPoss);
         request.getServletContext().getRequestDispatcher("/WEB-INF/LivresPossedes.jsp").forward(request, response);
     }
 
-    
-    protected void ajouterLivre(){
-        
-    }
-    
-    protected void modifierLivre(){
-        
-    }
-    
-    protected void supprimerLivre(){
-        
-    }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**

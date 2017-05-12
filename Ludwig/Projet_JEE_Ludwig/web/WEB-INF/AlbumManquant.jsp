@@ -23,7 +23,7 @@
 
         <br><br>
 
-        <form method="POST" action="AlbumManquant">
+        <form method="POST" action="controllerListeAlbumsManquants">
             <div class = "recap">
                 <input class = "textInput" type="text" name="Recherche_BD_Manquant" value="" placeholder="Saisissez la série">
             </div>
@@ -32,8 +32,8 @@
             
             <div class="groupBtn">
                 <input type="reset" name="Button_Annuler_Manquant" value="Annuler" class="btn">
-                <!--<input type="submit" name="Button_Validation_Manquant" value="Envoyer" class="btn">-->
-                <input class="btn" type="button" value="Envoyer" onclick="document.location.href = 'controllerListeAlbumsManquants'">
+                <input type="submit" name="Button_Validation_Manquant" value="Envoyer" class="btn">
+                <!--<input class="btn" type="button" value="Envoyer" onclick="document.location.href = 'controllerListeAlbumsManquants'">-->
             </div>
         </form>
 

@@ -21,35 +21,40 @@
         <div class="titre">Ajouter un livre existant</div>
 
         <br><br><br><br>
-        
-        <div class = "recap">
-            <label class = recapP>Série : </label>
-            <input class = "textInput" type="text" name="serie" value="">
-            <br><br>
-            <label class = recapP>Titre : </label>
-            <input class = "textInput"  type="text" name="titre" value="">
-            <br><br>
-            <label class = recapP>Éditeur : </label>
-            <input class = "textInput" type="text" name="editeur" value="">
-            <br><br>
-            <label class = recapP>Auteur : </label>
-            <input class = "textInput" type="text" name="auteur" value="">
-            <br><br>
-            <label class = recapP>Langue : </label>
-            <input class = "textInput" type="text" name="langue" value="">
-            <br><br>
-            <label class = recapP>ISBN : </label>
-            <input class = "textInput" type="text" name="isbn" value="">
-            <br><br>
-        </div>
-        
-        <!--Bouton bas-->
-        <div class='groupBtn'>
-            <!--Bouton Annuler-->
-            <input class="btn" type="button" value="Annuler" onclick="document.location.href = 'controllerLivresExistants'">
 
-            <!--Bouton Envoyer-->
-            <input class="btn" type="button" value="Envoyer" onclick="document.location.href = 'index.html'">
-        </div>
+        <form method="POST" action="controllerCreationAlbum">
+            <div class = "recap">
+                <label class = recapP>Série : </label>
+                <input class = "textInput" type="text" name="nom_serie" value="">
+                <br><br>
+                <label class = recapP>Titre : </label>
+                <input class = "textInput"  type="text" name="titre_album" value="">
+                <br><br>
+                <label class = recapP>Éditeur : </label>
+                <input class = "textInput" type="text" name="nom_editeur" value="">
+                <br><br>
+                <label class = recapP>Illustrateur : </label>
+                <input class = "textInput" type="text" name="nom_illustrateur" value="">
+                <br><br>
+                <label class = recapP>Scénariste : </label>
+                <input class = "textInput" type="text" name="nom_scenariste" value="">
+                <br><br>
+                <label class = recapP>Langue : </label>
+                <input class = "textInput" type="text" name="langue" value="">
+                <br><br>
+                <label class = recapP>ISBN : </label>
+                <input class = "textInput" type="text" name="ISBN" value="">
+                <br><br>
+            </div>
+
+            <!--Bouton bas-->
+            <div class='groupBtn'>
+                <!--Bouton Annuler-->
+                <input class="btn" type="button" value="Annuler" onclick="document.location.href = 'controllerLivresExistants'">
+
+                <!--Bouton Envoyer-->
+                <input type="submit" name="BoutonAjoutAlbum" value="Envoyer" class="btn">
+            </div>
+        </form>
     </body>
 </html>

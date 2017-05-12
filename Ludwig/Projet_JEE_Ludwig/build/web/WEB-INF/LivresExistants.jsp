@@ -33,7 +33,8 @@
                     <th>Série</th>
                     <th>Titre</th>
                     <th>Editeur</th>
-                    <th>Auteur</th>
+                    <th>Illustrateur</th>
+                    <th>Scénariste</th>
                     <th>Langue</th>
                     <th>ISBN</th>
                 </tr>
@@ -41,48 +42,52 @@
             <!--Corps-->
             <tbody>
                 <tr>
-                    <td><input type="radio" name="id" value=""></td>
-                    <td>123456789</td>
-                    <td>Tintin</td>
-                    <td>Tintin sur la lune</td>
-                    <td>Casterman</td>
-                    <td>Hergé</td>
-                    <td>Fr</td>
-                    <td>1234567890123</td>
+                    <td><input type="radio" name="id_btn" value="album.id_album"></td>
+                    <td>${album.id_album}</td>
+                    <td>${album.nom_serie}</td>
+                    <td>${album.titre_album}</td>
+                    <td>${album.nom_editeur}</td>
+                    <td>${album.nom_illustrateur}</td>
+                    <td>${album.nom_scenariste}</td>
+                    <td>${album.langue}</td>
+                    <td>${album.ISBN}</td>
 
                 </tr>
 
                 <tr>
-                    <td><input type="radio" name="id" value=""></td>
-                    <td>123456789</td>
-                    <td>Tintin</td>
-                    <td>Tintin sur la lune</td>
-                    <td>Casterman</td>
-                    <td>Hergé</td>
-                    <td>Fr</td>
-                    <td>1234567890123</td>
+                    <td><input type="radio" name="id_btn" value="album.id_album"></td>
+                    <td>${album.id_album}</td>
+                    <td>${album.nom_serie}</td>
+                    <td>${album.titre_album}</td>
+                    <td>${album.nom_editeur}</td>
+                    <td>${album.nom_illustrateur}</td>
+                    <td>${album.nom_scenariste}</td>
+                    <td>${album.langue}</td>
+                    <td>${album.ISBN}</td>
                 </tr>
 
                 <tr>
-                    <td><input type="radio" name="id" value=""></td>
-                    <td>123456789</td>
-                    <td>Tintin</td>
-                    <td>Tintin sur la lune</td>
-                    <td>Casterman</td>
-                    <td>Hergé</td>
-                    <td>Fr</td>
-                    <td>1234567890123</td>
+                    <td><input type="radio" name="id_btn" value="album.id_album"></td>
+                    <td>${album.id_album}</td>
+                    <td>${album.nom_serie}</td>
+                    <td>${album.titre_album}</td>
+                    <td>${album.nom_editeur}</td>
+                    <td>${album.nom_illustrateur}</td>
+                    <td>${album.nom_scenariste}</td>
+                    <td>${album.langue}</td>
+                    <td>${album.ISBN}</td>
                 </tr>
 
                 <tr>
-                    <td><input type="radio" name="id" value=""></td>
-                    <td>123456789</td>
-                    <td>Tintin</td>
-                    <td>Tintin sur la lune</td>
-                    <td>Casterman</td>
-                    <td>Hergé</td>
-                    <td>Fr</td>
-                    <td>1234567890123</td>
+                    <td><input type="radio" name="id_btn" value="album.id_album"></td>
+                    <td>${album.id_album}</td>
+                    <td>${album.nom_serie}</td>
+                    <td>${album.titre_album}</td>
+                    <td>${album.nom_editeur}</td>
+                    <td>${album.nom_illustrateur}</td>
+                    <td>${album.nom_scenariste}</td>
+                    <td>${album.langue}</td>
+                    <td>${album.ISBN}</td>
                 </tr>
             </tbody>
             <!--Footer-->
@@ -93,7 +98,8 @@
                     <th>Série</th>
                     <th>Titre</th>
                     <th>Editeur</th>
-                    <th>Auteur</th>
+                    <th>Illustrateur</th>
+                    <th>Scénariste</th>
                     <th>Langue</th>
                     <th>ISBN</th>
                 </tr>

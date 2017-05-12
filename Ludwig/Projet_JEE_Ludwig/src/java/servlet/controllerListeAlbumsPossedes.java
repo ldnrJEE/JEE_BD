@@ -13,6 +13,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import traitement.Traitement_Exemplaire;
 
 /**
  *
@@ -32,11 +33,10 @@ public class controllerListeAlbumsPossedes extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        Exemplaire exemplaire = new Exemplaire(2, 5, true, new Date(2017, 05, 11), 25.25f, 3, "bonn état", 6);
-         request.setAttribute("exemplaire", exemplaire);
-         
-//         Traitement_Exemplaire.affEx(exemplaire);
-         
+        Exemplaire exemplaire = new Exemplaire(2, 5, true, "01/02/2010", 25.25f, 3, "bonn état", 6);
+        request.setAttribute("exemplaire", exemplaire);
+
+         Traitement_Exemplaire.affEx(exemplaire);
         this.getServletContext().getRequestDispatcher("/WEB-INF/ListeAlbumsPossedes.jsp").forward(request, response);
     }
 

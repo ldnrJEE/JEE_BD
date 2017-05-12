@@ -40,6 +40,18 @@
         <servlet-name>controllerListeAlbumsPossedes</servlet-name>
         <servlet-class>servlet.controllerListeAlbumsPossedes</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>controllerCreationAlbum</servlet-name>
+        <servlet-class>servlet.controllerCreationAlbum</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControllerModificationAlbum</servlet-name>
+        <servlet-class>servlet.controllerModificationAlbum</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>controllerCreationExemplaire</servlet-name>
+        <servlet-class>servlet.controllerCreationExemplaire</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>controllerLivresExistants</servlet-name>
         <url-pattern>/controllerLivresExistants</url-pattern>
@@ -79,6 +91,18 @@
     <servlet-mapping>
         <servlet-name>controllerListeAlbumsPossedes</servlet-name>
         <url-pattern>/controllerListeAlbumsPossedes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controllerCreationAlbum</servlet-name>
+        <url-pattern>/controllerCreationAlbum</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControllerModificationAlbum</servlet-name>
+        <url-pattern>/ControllerModificationAlbum</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controllerCreationExemplaire</servlet-name>
+        <url-pattern>/controllerCreationExemplaire</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
