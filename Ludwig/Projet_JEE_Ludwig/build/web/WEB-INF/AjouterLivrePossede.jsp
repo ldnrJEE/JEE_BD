@@ -23,33 +23,42 @@
         <br><br><br><br>
 
         <div class = "recap">
-            <p>Date de dépôt : 
-                <input type="text" name="dateDepot" value="">
-            </p>
-            <p>Edition originale : 
-                <label>Oui
-                    <input type="radio" name="radio1" value="oui">
-                </label>
-                <label>Non
-                    <input type="radio" name="radio1" value="non">
-                </label>
-            </p>
-            <p>Date d'achat : 
-                <input type="date" name="dateAchat" value="<?php echo $today?>">
-            </p>
-            <p>Prix d'achat : 
-                <input type="text" name="prixAchat" value="">
-            </p>
-            <p>État de conservation : 
-                <select name="etat">
-                    <option>Mauvais</option>
-                    <option>Moyen</option>
-                    <option>Bon</option>
-                </select>
-            </p>
-            <p>Notes : 
-                <input type="text" name="notes" value="">
-            </p>
+            <label class = recapP>Date de dépôt : </label>
+            <input class = "textInput" type="text" name="dateDepot" value="">
+            <br><br>
+          
+            <label class = recapP>Prix d'achat : </label>
+            <input class = "textInput" type="text" name="prixAchat" value="">
+            <br><br>
+            
+            <label class = recapP>État de conservation : </label> 
+            <select class = "textInput" name="etat">
+                <option>Mauvais</option>
+                <option>Moyen</option>
+                <option>Bon</option>
+            </select>
+            <br><br>
+            
+            <label class = recapP>Notes : </label>
+            <input class = "textInput" type="text" name="notes" value="">
+            <br><br>
+            
+            <label class = recapP>ID : </label>
+            <input class = "textInput" type="text" name="id" value="">
+            <br><br>
+            
+            <label class = recapP>Date d'achat : </label>
+            <input class = "textInput" type="date" name="dateAchat" value="<?php echo $today?>">
+            <br><br>
+            
+            <label class = recapP>Edition originale : </label>
+            <label>Oui
+                <input type="radio" name="radio1" value="oui">
+            </label>
+            <label>Non
+                <input type="radio" name="radio1" value="non">
+            </label>
+            <br><br>    
         </div>
 
         <div class='groupBtn'>
