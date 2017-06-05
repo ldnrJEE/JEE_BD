@@ -7,6 +7,9 @@ package servlet;
 
 import beans.Exemplaire;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -32,27 +35,26 @@ public class controllerCreationExemplaire extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         
         //********** RECUPERATION DES DONNEES **********
-        Integer id_exemplaire = Integer.parseInt(request.getParameter("id_exemplaire"));
-        Integer date_depot = Integer.parseInt(request.getParameter("date_depot"));
-        Boolean edition_originale = Boolean.parseBoolean(request.getParameter("edition_originale"));       
+//        Integer id_exemplaire = request.getParameter("id_exemplaire");
+//        Integer date_depot = Integer.parseInt(request.getParameter("date_depot"));
+        Boolean edition_originale = Boolean.parseBoolean(request.getParameter("edition_originale"));
         String date_achat = request.getParameter("date_achat");
-        Float prix_achat = Float.parseFloat(request.getParameter("prix_achat"));
-        Integer etat_conservation = Integer.parseInt(request.getParameter("etat_conservation"));
+//        Float prix_achat = Float.parseFloat(request.getParameter("prix_achat"));
+//        Integer etat_conservation = Integer.parseInt(request.getParameter("etat_conservation"));
         String note_texte = request.getParameter("note_texte");
 //        Integer id_album = Integer.parseInt(request.getParameter("id_album"));
 //        Integer nombre_exemplaire = request.getParameter("nombre_exemplaire");
-//BESOIN DE RECUPERER LID ALBUM POUR POUVOIR AFFICHER LE TITRE DE LEXEMPLAIRE
 
         //********** INSTANCIATION DU BEAN **********
         Exemplaire ex = new Exemplaire();
 
         //********** ENREGISTREMENT DES DONNEES DANS LE BEAN **********
-        ex.setId_exemplaire(id_exemplaire);
-        ex.setDate_depot(date_depot);
+//        ex.setId_exemplairem(id_exemplaire);
+//        ex.setDate_depot(date_depot);
         ex.setEdition_originale(edition_originale);
         ex.setDate_achat(date_achat);
-        ex.setPrix_achat(prix_achat);
-        ex.setEtat_conservation(etat_conservation);
+//        ex.setPrix_achat(prix_achat);
+//        ex.setEtat_conservation(etat_conservation);
         ex.setNote_texte(note_texte);
 //        ex.setId_album(id_album);
 //        album.setNombre_exemplaire(nombre_exemplaire);

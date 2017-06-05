@@ -4,9 +4,6 @@
     Author     : stag
 --%>
 
-<!--JSP ListeAlbumsPossedes
-Affiche une liste de tous les albums d'une série spécifiée que possède le collectionneur-->
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -25,8 +22,7 @@ Affiche une liste de tous les albums d'une série spécifiée que possède le co
         <div class="titre">Liste des albums possédés dans cette série</div>
 
         <br><br><br><br>
-        <!--Table, besoin lien BDD-->
-        <!--Besoin de toute la série titre et isbn d'Album-->
+
         <table>
             <thead>
                 <tr>

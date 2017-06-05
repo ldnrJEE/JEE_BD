@@ -4,10 +4,6 @@
     Author     : stag
 --%>
 
-<!--JSP ModifierLivrePossede
-Envois un formulaire à l'utilisateur pour qu'il puisse modifier les attributs
-d'un exemplaire qu'il possède-->
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -26,54 +22,42 @@ d'un exemplaire qu'il possède-->
 
         <br><br><br><br>
 
-        <!--***** FORMULAIRE *****-->
-        <form method="POST" action="controllerCreationExemplaire">
-            <div class = "recap">
-                <label class = recapP>Date de dépôt : </label>
-                <input class = "textInput" type="text" name="date_depot" value="">
-                <br><br>
-
-                <label class = recapP>Prix d'achat : </label>
-                <input class = "textInput" type="text" name="prix_achat" value="">
-                <br><br>
-
-                <label class = recapP>État de conservation : </label> 
-                <select class = "textInput" name="etat_conservation">
-                    <option value="1">Mauvais</option>
-                    <option value="2">Moyen</option>
-                    <option value="3">Bon</option>
-                </select>
-                <br><br>
-
-                <label class = recapP>Notes : </label>
-                <input class = "textInput" type="text" name="note_texte" value="">
-                <br><br>
-
-                <label class = recapP>ID : </label>
-                <input class = "textInput" type="text" name="id_exemplaire" value="">
-                <br><br>
-
-                <label class = recapP>Date d'achat : </label>
-                <input class = "textInput" type="date" name="date_achat" value="">
-                <br><br>
-
-                <label class = recapP>Edition originale : </label>
+        <div class = "recap">
+            <p>Date de dépôt : 
+                <input type="text" name="dateDepot" value="">
+            </p>
+            <p>Edition originale : 
                 <label>Oui
-                    <input type="radio" name="edition_originale" value="true">
+                    <input type="radio" name="radio1" value="oui">
                 </label>
                 <label>Non
-                    <input type="radio" name="edition_originale" value="false">
+                    <input type="radio" name="radio1" value="non">
                 </label>
-                <br><br>    
-            </div>
+            </p>
+            <p>Date d'achat : 
+                <input type="date" name="dateAchat" value="<?php echo $today?>">
+            </p>
+            <p>Prix d'achat : 
+                <input type="text" name="prixAchat" value="">
+            </p>
+            <p>État de conservation : 
+                <select name="etat">
+                    <option>Mauvais</option>
+                    <option>Moyen</option>
+                    <option>Bon</option>
+                </select>
+            </p>
+            <p>Notes : 
+                <input type="text" name="notes" value="">
+            </p>
+        </div>
 
-            <div class='groupBtn'>
-                <!--Bouton Annuler-->
-                <input class="btn" type="button" value="Annuler" onclick="document.location.href = 'controllerLivresPossedes'">
+        <div class='groupBtn'>
+            <!--Bouton Annuler-->
+            <input class="btn" type="button" value="Annuler" onclick="document.location.href = 'controllerLivresPossedes'">
 
-                <!--Bouton Envoyer-->
-                <input type="submit" name="BoutonAjoutExemplaire" value="Envoyer" class="btn">
-            </div>
-        </form>
+            <!--Bouton Envoyer-->
+            <input class="btn" type="button" value="Envoyer" onclick="document.location.href = 'index.html'">
+        </div>
     </body>
 </html>
