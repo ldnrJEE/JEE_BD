@@ -4,9 +4,6 @@
     Author     : stag
 --%>
 
-<!--JSP AjouterLivreExistant
-Donne un formulaire permettant à l'utilisateur d'ajouter un album à la BDD générale-->
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -25,7 +22,6 @@ Donne un formulaire permettant à l'utilisateur d'ajouter un album à la BDD gé
 
         <br><br><br><br>
 
-        <!--***** FORMULAIRE *****-->
         <form method="POST" action="controllerCreationAlbum">
             <div class = "recap">
                 <label class = recapP>Série : </label>

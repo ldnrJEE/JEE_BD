@@ -4,10 +4,6 @@
     Author     : stag
 --%>
 
-<!--JSP AlbumPossede
-Demande à l'utilisateur de saisir la série pour laquelle il souhaite
-rechercher les albums qu'il possède-->
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -27,7 +23,7 @@ rechercher les albums qu'il possède-->
 
         <br><br>
 
-        <form method="POST" action="controllerListeAlbumsPossedes">
+        <form method="POST" action="Affichage_Serie">
             <div class = "recap">
                 <input class = "textInput" type="text" name="Recherche_BD" value="" placeholder="Saisissez la série">
             </div>
@@ -35,9 +31,9 @@ rechercher les albums qu'il possède-->
             <br><br><br><br><br><br><br><br>
 
             <div class="groupBtn">
-                <input class="btn" type="button" value="Retour" onclick="document.location.href = 'index.html'">
-                <input type="submit" name="Button_Validation_Possésion" value="Envoyer" class="btn" >
-                <!--<input class="btn" type="button" value="Envoyer" onclick="document.location.href = 'controllerListeAlbumsPossedes'">-->
+                <input type="reset" name="Button_Annuler_Possésion" value="Annuler" class="btn">
+                <!--<input type="submit" name="Button_Validation_Possésion" value="Envoyer" class="btn" >-->
+                <input class="btn" type="button" value="Envoyer" onclick="document.location.href = 'controllerListeAlbumsPossedes'">
             </div>
         </form>
 

@@ -4,10 +4,6 @@
     Author     : stag
 --%>
 
-<!--JSP AlbumManquant
-Demande à l'utilisateur de saisir la série pour laquelle il souhaite
-rechercher les albums qui lui manquent-->
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -35,8 +31,9 @@ rechercher les albums qui lui manquent-->
             <br><br><br><br><br><br><br><br>
             
             <div class="groupBtn">
-                <input class="btn" type="button" value="Retour" onclick="document.location.href = 'index.html'">
+                <input type="reset" name="Button_Annuler_Manquant" value="Annuler" class="btn">
                 <input type="submit" name="Button_Validation_Manquant" value="Envoyer" class="btn">
+                <!--<input class="btn" type="button" value="Envoyer" onclick="document.location.href = 'controllerListeAlbumsManquants'">-->
             </div>
         </form>
 
